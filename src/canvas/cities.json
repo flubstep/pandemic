@@ -1,0 +1,257 @@
+[
+    {
+        "name": "San Francisco",
+        "position": [361, 506],
+        "color": "blue"
+    },
+    {
+        "name": "Chicago",
+        "position": [579, 515],
+        "color": "blue"
+    },
+    {
+        "name": "Montreal",
+        "position": [713, 496],
+        "color": "blue"
+    },
+    {
+        "name": "Atlanta",
+        "position": [598, 625],
+        "color": "blue",
+        "textPosition": "right"
+    },
+    {
+        "name": "New York",
+        "position": [755, 533],
+        "color": "blue",
+        "textPosition": "right"
+    },
+    {
+        "name": "Washington",
+        "position": [707, 580],
+        "color": "blue",
+        "textPosition": "right"
+    },
+    {
+        "name": "Miami",
+        "position": [623, 703],
+        "color": "yellow",
+        "textPosition": "right"
+    },
+    {
+        "name": "Los Angeles",
+        "position": [364, 594],
+        "color": "yellow"
+    },
+    {
+        "name": "Mexico City",
+        "position": [469, 726],
+        "color": "yellow"
+    },
+    {
+        "name": "Bogota",
+        "position": [666, 913],
+        "color": "yellow"
+    },
+    {
+        "name": "Sao Paolo",
+        "position": [922, 1069],
+        "color": "yellow"
+    },
+    {
+        "name": "Buenos Aires",
+        "position": [819, 1270],
+        "color": "yellow"
+    },
+    {
+        "name": "Santiago",
+        "position": [718, 1237],
+        "color": "yellow"
+    },
+    {
+        "name": "Lima",
+        "position": [653, 1044],
+        "color": "yellow"
+    },
+    {
+        "name": "London",
+        "position": [1227, 463],
+        "color": "blue"
+    },
+    {
+        "name": "Essen",
+        "position": [1313, 478],
+        "color": "blue"
+    },
+    {
+        "name": "Paris",
+        "position": [1252, 527],
+        "color": "blue"
+    },
+    {
+        "name": "Madrid",
+        "position": [1212, 596],
+        "color": "blue"
+    },
+    {
+        "name": "Milan",
+        "position": [1318, 551],
+        "color": "blue"
+    },
+    {
+        "name": "St. Petersburg",
+        "position": [1471, 371],
+        "color": "blue"
+    },
+    {
+        "name": "Lagos",
+        "position": [1284, 875],
+        "color": "yellow"
+    },
+    {
+        "name": "Khartoum",
+        "position": [1474, 803],
+        "color": "yellow"
+    },
+    {
+        "name": "Kinhasa",
+        "position": [1352, 959],
+        "color": "yellow"
+    },
+    {
+        "name": "Johannesburg",
+        "position": [1410, 1191],
+        "color": "yellow"
+    },
+    {
+        "name": "Algiers",
+        "position": [1272, 644],
+        "color": "black"
+    },
+    {
+        "name": "Istanbul",
+        "position": [1453, 585],
+        "color": "black"
+    },
+    {
+        "name": "Cairo",
+        "position": [1462, 695],
+        "color": "black"
+    },
+    {
+        "name": "Baghdad",
+        "position": [1560, 654],
+        "color": "black"
+    },
+    {
+        "name": "Riyadh",
+        "position": [1584, 729],
+        "color": "black"
+    },
+    {
+        "name": "Moscow",
+        "position": [1534, 427],
+        "color": "black"
+    },
+    {
+        "name": "Tehran",
+        "position": [1651, 609],
+        "color": "black"
+    },
+    {
+        "name": "Karachi",
+        "offset": [1767, 654],
+        "position": [1734, 706],
+        "color": "black"
+    },
+    {
+        "name": "Mumbai",
+        "position": [1793, 759],
+        "color": "black",
+        "textPosition": "left"
+    },
+    {
+        "name": "Delhi",
+        "position": [1837, 701],
+        "color": "black"
+    },
+    {
+        "name": "Kolkata",
+        "position": [1880, 760],
+        "color": "black"
+    },
+    {
+        "name": "Chennai",
+        "position": [1848, 832],
+        "color": "black",
+        "textPosition": "left"
+    },
+    {
+        "name": "Beijing",
+        "offset": [2103, 633],
+        "position": [2040, 581],
+        "color": "red"
+    },
+    {
+        "name": "Seoul",
+        "position": [2163, 569],
+        "color": "red"
+    },
+    {
+        "name": "Tokyo",
+        "position": [2260, 524],
+        "color": "red",
+        "textPosition": "right"
+    },
+    {
+        "name": "Shanghai",
+        "position": [2075, 695],
+        "color": "red",
+        "textPosition": "left"
+    },
+    {
+        "name": "Osaka",
+        "position": [2234, 577],
+        "color": "red",
+        "textPosition": "right"
+    },
+    {
+        "name": "Taipei",
+        "position": [2150, 695],
+        "color": "red",
+        "textPosition": "right"
+    },
+    {
+        "name": "Hong Kong",
+        "position": [2078, 745],
+        "color": "red",
+        "textPosition": "right"
+    },
+    {
+        "name": "Bangkok",
+        "position": [2010, 806],
+        "color": "red",
+        "textPosition": "bottom"
+    },
+    {
+        "name": "Ho Chi Minh City",
+        "position": [2072, 804],
+        "color": "red",
+        "textPosition": "right"
+    },
+    {
+        "name": "Manila",
+        "position": [2276, 950],
+        "color": "red"
+    },
+    {
+        "name": "Jakarta",
+        "position": [2075, 986],
+        "color": "red"
+    },
+    {
+        "name": "Sydney",
+        "position": [2345, 1261],
+        "color": "red"
+    }
+]
