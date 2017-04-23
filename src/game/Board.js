@@ -104,36 +104,41 @@ export default class Board extends Component {
                 let [cx, cy] = city.position;
                 let highlight = city.name === this.state.highlightCity;
                 let color = CITY_COLORS[city.color];
-                let x, y, anchor;
+                let dx, dy, anchor;
                 switch (city.textPosition) {
                   case 'top':
-                    x = cx;
-                    y = cy - 20;
+                    dx = 0;
+                    dy = -20;
                     anchor = 'middle';
                     break;
                   case 'bottom':
-                    x = cx;
-                    y = cy + 32;
+                    dx = 0;
+                    dy = 32;
                     anchor = 'middle';
                     break;
                   case 'left' :
-                    x = cx - 20;
-                    y = cy + 6;
+                    dx = -20;
+                    dy = 6;
                     anchor = 'end';
                     break;
                   case 'right':
                   default:
-                    x = cx + 20;
-                    y = cy + 6;
+                    dx = 20;
+                    dy = 6;
                     anchor = 'start';
                 }
+                let translateX = highlight ? dx * 0.5 : 0;
+                let translateY = highlight ? dy * 0.2 : 0;
                 return (
                   <g key={'name-' + city.name}>
                     <text
                       className={'city-name autoanimate' + (highlight ? ' highlight' : '')}
+                      style={{
+                        transform: `translate(${translateX}px, ${translateY}px)`
+                      }}
                       textAnchor={anchor}
-                      x={x}
-                      y={y}
+                      x={cx + dx}
+                      y={cy + dy}
                       >
                       {city.name}
                     </text>

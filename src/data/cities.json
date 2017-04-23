@@ -87,7 +87,8 @@
     {
         "name": "Paris",
         "position": [1252, 527],
-        "color": "blue"
+        "color": "blue",
+        "textPosition": "left"
     },
     {
         "name": "Madrid",
