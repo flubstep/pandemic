@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './Board.css';
 
-import worldMap from '../static/images/worldmap-green.svg';
+import worldMap from '../static/images/worldmap-teal.svg';
 import cities from '../data/cities.json';
 import connections from '../data/connections.json';
 
