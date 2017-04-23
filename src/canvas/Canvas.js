@@ -7,6 +7,7 @@ import connections from './connections.json';
 
 import worldMap from '../static/images/world-map@2x.png';
 import waterTile from '../static/images/water-tile.jpg';
+import character from '../static/images/character@2x.png';
 
 PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
 
@@ -171,13 +172,20 @@ const moveToCity = (city) => {
     })
     .duration(500)
     .start();
-}
+};
 
 const createBackground = (width, height) => {
   let texture = PIXI.Texture.fromImage(waterTile);
   let tilingSprite = new PIXI.extras.TilingSprite(texture, width, height);
   return tilingSprite;
-}
+};
+
+const createCharacter = () => {
+  let texture = PIXI.Texture.fromImage(character);
+  let sprite = new PIXI.Sprite(texture);
+  sprite.scale.set(0.35);
+  return sprite;
+};
 
 const createMap = (width, height) => {
   let texture = PIXI.Texture.fromImage(worldMap);
@@ -208,6 +216,11 @@ const createMap = (width, height) => {
     let city = createDraggableCity(cityDefinition, container);
     container.addChild(city);
   }
+
+  let character = createCharacter();
+  character = draggable(character);
+  container.addChild(character);
+
   return draggable(container, "Map");
 };
 
@@ -215,6 +228,7 @@ const render = (el, scale = 1) => {
   PIXI.loader
     .add('waterTile', waterTile)
     .add('worldMap', worldMap)
+    .add('character', character)
     .once('complete', () => {
       app = new PIXI.Application(vw, vh, { backgroundColor: COLORS.white });
       map = createMap(vw, vh);
