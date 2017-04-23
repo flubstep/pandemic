@@ -265,7 +265,7 @@ export default class Board extends Component {
           onMouseMove={this.onMouseMove}
           onMouseUp={this.onMouseUp}
           style={{
-            transform: `translate(-${offsetX}px, -${offsetY}px)`,
+            transform: `translate(${-offsetX}px, ${-offsetY}px)`,
             transition: this.state.autoScrolling ? 'transform 0.5s ease-in-out' : undefined
           }}>
           <GameMap onCityClick={this.centerOnCity} />
