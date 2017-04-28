@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
+import { CityColors } from './Colors';
 
 import './Board.css';
 
@@ -14,18 +16,42 @@ for (let city of cities) {
   CITIES[city.name] = city;
 }
 
-const CityColors = {
-  blue: '#1e88e5',
-  yellow: '#fdd835',
-  red: '#e53935',
-  black: '#000000'
-};
-
 const Colors = {
   red: '#e57373',
   yellow: '#fdd835',
   darkBlue: '#1a237e'
 };
+
+class BackgroundLines extends Component {
+  render() {
+    let latitudes = _.range(50, this.props.height, 50);
+    let longitudes = _.range(50, this.props.width, 50);
+    return (
+      <g>
+        { latitudes.map(latitude => (
+          <line
+            key={'lat' + latitude}
+            x1={0} y1={latitude}
+            x2={this.props.width} y2={latitude}
+            opacity={0.1}
+            stroke={Colors.red}
+            strokeWidth={1}
+          />
+        ))}
+        { longitudes.map(longitude => (
+          <line
+            key={'lon' + longitude}
+            x1={longitude} y1={0}
+            x2={longitude} y2={this.props.height}
+            opacity={0.1}
+            stroke={Colors.red}
+            strokeWidth={1}
+          />
+        ))}
+      </g>
+    );
+  }
+}
 
 class CityConnections extends Component {
 
@@ -173,12 +199,12 @@ class GameMap extends Component {
         className="map"
         style={{
           height: MAP_HEIGHT,
-          width: MAP_WIDTH,
-          background: `url(${worldMap})`,
-          backgroundSize: `${MAP_WIDTH}px ${MAP_HEIGHT}px`,
+          width: MAP_WIDTH
         }}
         >
         <svg height={MAP_HEIGHT} width={MAP_WIDTH}>
+          <BackgroundLines height={MAP_HEIGHT} width={MAP_WIDTH} />
+          <image href={worldMap} height={MAP_HEIGHT} width={MAP_WIDTH} />
           <CityConnections
             connections={connections}
             highlightCity={this.state.highlightCity}

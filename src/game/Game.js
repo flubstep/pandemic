@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Board from './Board';
+import CityCard from './cards/CityCard';
 
-import './Game.scss'
+import './Game.css';
 
 export default class Game extends Component {
 
@@ -16,6 +17,11 @@ export default class Game extends Component {
     return (
       <div className="Game">
         <Board />
+        <CityCard
+          name="Los Angeles"
+          country="United States"
+          color="yellow"
+        />
       </div>
     )
   }
