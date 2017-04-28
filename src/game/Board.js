@@ -279,6 +279,9 @@ export default class Board extends Component {
       autoScrolling: true
     });
     setTimeout(() => this.setState({ autoScrolling: false }), 500);
+    if (this.props.onSelectCity) {
+      this.props.onSelectCity(city);
+    }
   }
 
   render() {

@@ -9,19 +9,21 @@ export default class Game extends Component {
   constructor(props, context) {
     super(props, context)
     this.state = {
-
+      selectedCity: null
     }
   }
 
   render() {
     return (
       <div className="Game">
-        <Board />
-        <CityCard
-          name="Los Angeles"
-          country="United States"
-          color="yellow"
-        />
+        <Board onSelectCity={(city) => this.setState({ selectedCity: city })} />
+        { this.state.selectedCity ? (
+          <CityCard
+            name={this.state.selectedCity.name}
+            country="The World"
+            color={this.state.selectedCity.color}
+          />
+        ) : null}
       </div>
     )
   }
